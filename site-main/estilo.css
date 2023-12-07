@@ -1,20 +1,16 @@
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'zabal', sans-serif;
+  font-family: 'zabal';
 }
 @font-face {
-    font-family: 'zabal';
-    src: url(fonts/ZabalDEMO-Regular.otf);
+  font-family: 'zabal';
+  src: url(fonts/ZabalDEMO-Regular.otf);
 }
 
-@font-face {
-    font-family: 'zabalbold';
-    src: url(fonts/ZabalDEMO-Bold.otf);
-}
 body {
+
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -54,7 +50,7 @@ button {
   border-radius: 5px;
   border: none;
   color: white;
-  background-color: #002653;
+  background-color: rgb(57, 57, 226);
 }
 
 .divTable {
@@ -196,7 +192,7 @@ tbody tr td.acao {
   padding: 5px 10px; 
   width: 100%;
   border: none;
-  background-color: #002653 ;
+  background-color: rgb(57, 57, 226);
   color: white;
 }
 

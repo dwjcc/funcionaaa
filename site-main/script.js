@@ -1,8 +1,8 @@
 const modal = document.querySelector('.modal-container')
 const tbody = document.querySelector('tbody')
 const sNome = document.querySelector('#m-nome')
-const sIdade = document.querySelector('#m-idade')
-const sSerie = document.querySelector('#m-serie')
+const sFuncao = document.querySelector('#m-funcao')
+const sSalario = document.querySelector('#m-salario')
 const btnSalvar = document.querySelector('#btnSalvar')
 
 let itens
@@ -19,13 +19,13 @@ function openModal(edit = false, index = 0) {
 
   if (edit) {
     sNome.value = itens[index].nome
-    sIdade.value = itens[index].idade
-    sSerie.value = itens[index].serie
+    sFuncao.value = itens[index].funcao
+    sSalario.value = itens[index].salario
     id = index
   } else {
     sNome.value = ''
-    sIdade.value = ''
-    sSerie.value = ''
+    sFuncao.value = ''
+    sSalario.value = ''
   }
   
 }
@@ -46,8 +46,8 @@ function insertItem(item, index) {
 
   tr.innerHTML = `
     <td>${item.nome}</td>
-    <td>${item.idade}</td>
-    <td>R$ ${item.serie}</td>
+    <td>${item.funcao}</td>
+    <td>R$ ${item.salario}</td>
     <td class="acao">
       <button onclick="editItem(${index})"><i class='bx bx-edit' ></i></button>
     </td>
@@ -68,10 +68,10 @@ btnSalvar.onclick = e => {
 
   if (id !== undefined) {
     itens[id].nome = sNome.value
-    itens[id].idade = sIdade.value
-    itens[id].serie = sSerie.value
+    itens[id].funcao = sFuncao.value
+    itens[id].salario = sSalario.value
   } else {
-    itens.push({'nome': sNome.value, 'idade': sIdade.value, 'serie': sSerie.value})
+    itens.push({'nome': sNome.value, 'funcao': sFuncao.value, 'salario': sSalario.value})
   }
 
   setItensBD()

@@ -19,35 +19,35 @@
 }
 
 /* css header */
+.cabecalho{
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
 .titulo{
     color:rgba(0, 38, 83, 1);
     text-align: center;
-    padding-top: 60px;
-    padding-bottom: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     font-family: 'zabalextrabold';
 }
 .logo{
-    position: absolute;
-    top: 25px;
-    left: 120px;
-    display: inline-block;
-    background-position: left center;
+    position: inherit
+}
+.login{
+    display: flex;
+    margin-left: 85%;
+
+}
+.login p{
+    margin-left: 10px;
 }
 #nav{
-  display: flex;
   align-items: center;
   justify-content:space-evenly;
   font-family: 'zabal';
 }
-.btn-area{
-    color:#002653;
-    position: static;
-    margin-left: 75%;
-    font-family: 'zabal';
-    border-radius: 15px;
-    padding-left: 10px;
-    padding-right: 10px;
-}
+
 /* footer */
 footer{
     background-color:rgba(0, 77, 142, 1);
@@ -159,14 +159,14 @@ footer{
     color: #FF5C00;
 }
 #login_button{
+    color: white;
     border: none;
-    background: aliceblue;
     padding: 7px;
     margin-top: 20px;
     margin-left: 70px;
     font-size: 18px;
     border-radius: 3px;
-    font-family: 'zabal';
+    font-family: 'zabalbold';
     cursor: pointer;
     padding-inline: 60px;
 }
@@ -264,6 +264,7 @@ button.botao-form-voluntario{
     display: flex;
     justify-content: center;
     text-align: justify;
+    padding-left: 20px;
     margin-left: 100px;
     margin-right: 100px;
     margin-top: 40px;
@@ -309,6 +310,7 @@ button.botao-form-voluntario{
 }
 .center{
     text-align: center;
+    padding: 30px;
 }
 .btn-doar{
     width: 352px;
@@ -338,5 +340,27 @@ button.botao-form-voluntario{
 #texto-primavera a{
     color: blue;
     font-family: 'zabal';
+}
+/* pagina parceiro */
+.btn-parceiro{
+    width: 352px;
+    height: 44px;
+    flex-shrink: 0;
+    border: 1px solid #FF5C00;
+    border-radius: 50px;
+    background: #FF5C00;
+    text-align: center;
+    color: white;
+    margin-bottom: 100px;
+    
+}
+p.legenda {
+    color: black;
+    font-family: 'zabalbold';
+    padding-top: 10px;
+    text-align: center;
+    border-radius: 60px;
+    background: #d9cfb06f;
+
 }
   
